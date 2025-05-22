@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/toony10/nodejs-course/issues"
   },
-  "homepage": "https://github.com/toony10/nodejs-course#readme"
+  "homepage": "https://github.com/toony10/nodejs-course#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21"
+  }
 }
