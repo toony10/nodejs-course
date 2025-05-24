@@ -1,32 +1,8 @@
 import * as http from 'http';
 import * as fs from 'fs';
 import * as url from 'url'
-import { text } from 'stream/consumers';
+import {replaceTemp,Product} from './modules/replaceTemplet'
 
-interface Product {
-    id: number;
-    productName: string;
-    image: string;
-    from: string;
-    nutrients: string;
-    quantity: string;
-    price: string;
-    organic: boolean;
-    description: string;
-};
-  
-const replaceTemp = (temp:string,product:Product) => {
-    let outPut = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
-    outPut = outPut.replace(/{%IMAGE%}/g, product.image);
-    outPut = outPut.replace(/{%PRICE%}/g, product.price);
-    outPut = outPut.replace(/{%ID%}/g, product.id.toString());
-    outPut = outPut.replace(/{%FROM%}/g, product.from);
-    outPut = outPut.replace(/{%NUTRIENTS%}/g, product.nutrients);
-    outPut = outPut.replace(/{%QUANTITY%}/g, product.quantity);
-    outPut = outPut.replace(/{%DESCRIPTION%}/g, product.description);
-    outPut = outPut.replace(/{%NOT_ORGANIC%}/g, product.organic ? '' : 'not-organic');
-    return outPut;
-}
 
 const tempOverview = fs.readFileSync(`${__dirname}/6-node-farm/overview.html`, 'utf-8');
 const tempCard = fs.readFileSync(`${__dirname}/6-node-farm/tamplet-card.html`, 'utf-8');
@@ -78,6 +54,4 @@ const server = http.createServer((req, res) => {
         }
     })
 
-    server.listen(8000, '127.0.0.1', () => {
-        console.log('Listening to requests on port 8000');
-    });
+    server.listen(8000, '127.0.0.1');
