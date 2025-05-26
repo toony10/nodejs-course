@@ -9,7 +9,7 @@ This repository contains my implementation of the [Master Node course](https://w
 - **Language:** TypeScript
 - **Runtime:** Node.js
 - **Framework:** Express (introduced later in the course)
-- **Tools:** Nodemon, Prettier, Git
+- **Tools:** Nodemon, concurrently, Prettier, Git
 - **Project Structure:** Modular with separate lessons and assets
 
 ---
