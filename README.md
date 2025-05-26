@@ -14,38 +14,13 @@ This repository contains my implementation of the [Master Node course](https://w
 
 ---
 
-## 📁 Project Structure
-
-```
-src/
-├── 1-intro/
-│   ├── 6-node-farm/
-│   ├── assets/
-│   │   ├── data.json
-│   │   └── myTxt.txt
-│   ├── modules/
-│   │   ├── 1-modules.ts
-│   │   ├── 2-Async-concept.ts
-│   │   ├── 3-create-server.ts
-│   │   ├── 4-routing.ts
-│   │   ├── 5-simple-Api.ts
-│   │   └── 7-node-farm.ts
-│   └── index.ts
-```
-
-📝 Code for each major topic is separated into modules.
-
-📁 `assets/` contains test data used in some lessons.
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/toony10/nodejs-course.git
+cd nodejs-course
 ```
 
 ### 2. Install dependencies
@@ -104,7 +79,9 @@ Each major section of the course has its own **branch**. Once I complete a secti
 
 If you have questions or want to connect:
 
-- GitHub: [your-username](https://github.com/your-username)
+- Portfolio: [Anton](https://anton-web-gold.vercel.app/)
+- LinkedIn: [anton-amir](https://www.linkedin.com/in/anton-amir)
+- GitHub: [toony10](https://github.com/toony10)
 
 ---
 
