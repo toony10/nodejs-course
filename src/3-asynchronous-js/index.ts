@@ -53,6 +53,12 @@ const getDogImage = async () => {
   } catch (err) {
     console.log(err);
   }
+  return '2: Ready 🐶';
 };
 
-getDogImage();
+console.log('1: I will get the dog image');
+getDogImage().then((x) => {
+  console.log(x);
+  console.log('2: dog image saved');
+})
+
